@@ -1,0 +1,21 @@
+@use "./abstracts" as *;
+@forward "./core/core.scss";
+
+body {
+  height: 100%;
+  font-family: $font-primary;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// manage the order of styles
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@tailwind components;
+@tailwind utilities;
