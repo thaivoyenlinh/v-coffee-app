@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.ant-input-affix-wrapper {
+  input.ant-input {
+    font-family: $font-primary;
+  }
+}
